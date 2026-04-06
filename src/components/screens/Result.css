@@ -1,0 +1,79 @@
+.dashboard-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+/* Sidebar Styling */
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.actions-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+/* Main Content Styling */
+.main-content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-wrapper {
+  margin-bottom: 40px;
+}
+
+.section-title-dash {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.divider {
+  height: 1px;
+  background: var(--glass-border);
+  margin: var(--space-lg) 0;
+}
+
+/* Bottom Section Styling */
+.bottom-section {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--glass-border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+/* Specific Card Adjustments */
+.course-card-dash {
+  background: #1e293b;
+  padding: var(--space-md);
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+@media (max-width: 1100px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+}
