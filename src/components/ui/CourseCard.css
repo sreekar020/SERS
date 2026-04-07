@@ -1,0 +1,48 @@
+.course-card-modern {
+  border: 1px solid var(--glass-border);
+  padding: 24px;
+  background: var(--glass-background);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  height: 100%;
+}
+
+.course-card-modern:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-5px);
+}
+
+.course-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.course-platform-badge {
+  background: rgba(var(--accent-primary-rgb), 0.15);
+  color: var(--accent-primary);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.course-duration {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.course-title-modern {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.course-description-modern {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

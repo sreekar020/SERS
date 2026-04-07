@@ -1,0 +1,43 @@
+.career-card-modern {
+  border: 1px solid var(--glass-border);
+  padding: 28px;
+  background: var(--glass-background);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  height: 100%;
+}
+
+.career-card-modern:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-8px);
+}
+
+.career-card-role-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.career-card-salary-badge {
+  display: inline-block;
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.1);
+}
+
+.career-card-companies {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.career-card-companies strong {
+  color: var(--text-primary);
+}

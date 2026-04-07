@@ -10,12 +10,11 @@
   --radius: 16px;
   --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --glass: rgba(30, 41, 59, 0.7);
+  --accent-primary: #6366f1;
+  --accent-primary-rgb: 99, 102, 241;
+  --glass-background: rgba(30, 41, 59, 0.4);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --blur: blur(12px);
-  --space-sm: 10px;
-  --space-md: 20px;
-  --space-lg: 30px;
-  --space-xl: 50px;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --glass-blur: blur(14px);
+  --radius-lg: 24px;
+  --shadow-premium: 0 20px 40px rgba(0, 0, 0, 0.3);
 }

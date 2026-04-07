@@ -1,13 +1,24 @@
 .form-card {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: var(--space-lg);
+  padding: 30px;
+  background: var(--glass-background);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+.stack-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-md);
+  gap: 20px;
 }
 
 .w-full {
@@ -19,3 +30,4 @@
     grid-template-columns: 1fr;
   }
 }
+

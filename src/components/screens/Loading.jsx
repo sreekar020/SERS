@@ -21,7 +21,7 @@ const Loading = ({ onComplete }) => {
         setStatus(statuses[currentIndex]);
       } else {
         clearInterval(interval);
-        onComplete();
+        if (onComplete) onComplete();
       }
     }, 1500);
     

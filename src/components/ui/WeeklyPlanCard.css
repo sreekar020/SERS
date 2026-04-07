@@ -1,0 +1,31 @@
+.weekly-plan-card-modern {
+  border: 1px solid var(--glass-border);
+  padding: 20px;
+  background: var(--glass-background);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 250px;
+}
+
+.weekly-plan-card-modern:hover {
+  border-color: var(--accent-primary);
+  background: rgba(var(--accent-primary-rgb), 0.05);
+}
+
+.weekly-plan-week {
+  color: var(--accent-primary);
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.weekly-plan-focus {
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.5;
+  font-size: 1.1rem;
+}

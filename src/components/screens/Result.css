@@ -1,13 +1,13 @@
 .dashboard-container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 60px 40px;
 }
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 310px 1fr;
-  gap: var(--space-lg);
+  grid-template-columns: 340px 1fr;
+  gap: 40px;
   align-items: start;
 }
 
@@ -15,65 +15,198 @@
 .sidebar-section {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: 20px;
+  position: sticky;
+  top: 40px;
 }
 
-.actions-group {
+.modern-glass-card {
+  background: var(--glass-background);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  padding: 30px;
+  border-radius: 24px;
+}
+
+.profile-avatar-premium {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  filter: drop-shadow(0 0 10px rgba(var(--accent-primary-rgb), 0.3));
+}
+
+.profile-name-modern {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.profile-tag-modern {
+  background: var(--accent-primary);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.divider-modern {
+  height: 1px;
+  background: var(--glass-border);
+  margin: var(--space-lg) 0;
+}
+
+.progress-header-modern {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.status-badge-active {
+  color: #22c55e;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.progress-bar-premium {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  border: 1px solid var(--glass-border);
+}
+
+.progress-bar-fill-premium {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), #6366f1);
+  box-shadow: 0 0 15px rgba(var(--accent-primary-rgb), 0.4);
+}
+
+.actions-group-modern {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
-  margin-top: var(--space-md);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-premium {
+  background: var(--accent-primary);
+  border: none;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.reset-btn-modern {
+  border: 1px solid var(--glass-border);
+  font-weight: 700;
+  border-radius: 12px;
 }
 
 /* Main Content Styling */
 .main-content-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
 }
 
-.section-wrapper {
-  margin-bottom: 40px;
+.hero-section-modern {
+  margin-bottom: 20px;
 }
 
-.section-title-dash {
-  font-size: 1.5rem;
+.hero-title-modern {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  background: linear-gradient(to right, #fff, #a5b4fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle-modern {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.section-title-premium {
+  font-size: 1.8rem;
   font-weight: 800;
-  margin-bottom: var(--space-md);
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 12px;
+  color: var(--text-primary);
 }
 
-.divider {
-  height: 1px;
-  background: var(--glass-border);
-  margin: var(--space-lg) 0;
-}
-
-/* Bottom Section Styling */
-.bottom-section {
-  margin-top: 40px;
-  padding-top: 40px;
-  border-top: 1px solid var(--glass-border);
+.course-grid-modern {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
 }
 
-/* Specific Card Adjustments */
-.course-card-dash {
-  background: #1e293b;
-  padding: var(--space-md);
-  margin-bottom: 15px;
-  border-radius: 12px;
+.roadmap-card-modern {
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  padding: 40px;
+  border-radius: 30px;
 }
 
-@media (max-width: 1100px) {
+.weekly-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skills-card-modern {
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  padding: 30px;
+  border-radius: 24px;
+}
+
+.skills-flex-modern {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* Career Section Full Width */
+.bottom-section-modern {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.career-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 1200px) {
   .dashboard-grid {
     grid-template-columns: 1fr;
   }
-  .bottom-section {
-    grid-template-columns: 1fr;
+  .sidebar-section {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title-modern {
+    font-size: 2.2rem;
+  }
+  .dashboard-container {
+    padding: 40px 20px;
   }
 }
